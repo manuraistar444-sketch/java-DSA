@@ -1,0 +1,127 @@
+1. Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.
+import java.util.Scanner;
+
+public class Main {
+
+    static void maximum(int a, int b, int c) {
+        System.out.println("Maximum = " + Math.max(a, Math.max(b, c)));
+    }
+
+    static void minimum(int a, int b, int c) {
+        System.out.println("Minimum = " + Math.min(a, Math.min(b, c)));
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter 3 numbers: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        maximum(a, b, c);
+        minimum(a, b, c);
+    }
+}
+output:
+Enter 3 numbers: 10 25 15
+Maximum = 25
+Minimum = 10
+
+2. Define a program to find out whether a given number is even or odd.
+import java.util.Scanner;
+
+public class Main {
+
+    static void check(int n) {
+        System.out.println((n % 2 == 0) ? "Even" : "Odd");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        check(n);
+    }
+}
+output :
+Enter a number: 8
+Even
+Enter a number: 15
+Odd
+
+3. A person is eligible to vote if his/her age is greater than or equal to 18. Define a method to find out if he/she is eligible to vote.
+import java.util.Scanner;
+
+public class Main {
+
+    static void vote(int age) {
+        System.out.println(age >= 18 ? "Eligible to Vote" : "Not Eligible to Vote");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter age: ");
+        int age = sc.nextInt();
+
+        vote(age);
+    }
+}
+output:
+Enter age: 20
+Eligible to Vote
+
+4. Write a program to print the sum of two numbers entered by user by defining your own method.
+import java.util.Scanner;
+
+public class Main {
+
+    static void sum(int a, int b) {
+        System.out.println("Sum = " + (a + b));
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        sum(a, b);
+    }
+}
+output:
+Enter first number: 10
+Enter second number: 20
+Sum = 30
+
+5. Define a method that returns the product of two numbers entered by user.
+import java.util.Scanner;
+
+public class Main {
+
+    static int product(int a, int b) {
+        return a * b;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Product = " + product(a, b));
+    }
+}
+output:
+Enter first number: 5
+Enter second number: 6
+Product = 30
